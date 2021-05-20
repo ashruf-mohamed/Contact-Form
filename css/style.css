@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Lato:wght@300;400;700;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+
+                                /*---- Background Design----*/
+
+body{
+    width: 100%;
+    height: 635px;
+    background-image: linear-gradient(315deg, #e2ecec, #e4e4e4, #f8f8f8, #e4e4e4, #e2ecec);
+}
+.bi{
+    
+    color:transparent;
+    background: linear-gradient(135deg, #23d5ab , #23a6d5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    opacity: 0.9;
+    position: absolute;
+    font-family:initial;
+
+}
+.bi-at{
+    font-size: 71px;
+    top: 547px;
+    left: 1020px;
+    transform: rotate( 347deg);
+}
+.bi-envelope-open{
+
+    font-size: 340px;
+    top: 180px;
+    left: 20px;
+}
+.bi-whatsapp{
+    font-size: 79px;
+    top: 446px;
+    left: 1084px;
+    transform: rotate(277deg);
+}
+.bi-instagram{
+    font-size: 88px;
+    top: 328px;
+    left: 1127px;
+    transform: rotate(331deg);
+}
+.bi-chat-dots{
+    font-size: 129px;
+    top: 168px;
+    left: 1158px;
+    transform: rotate(330deg);
+}
+.bi-calendar3{
+    font-size: 121px;
+    top: 34px;
+    left: 1209px;
+    transform: rotate(-9deg);
+}
+                                /*---- container Design----*/
+container{
+    width: 65%;
+    height: 80%;
+    top: 10%;
+    left:17.5%;
+    z-index: 999;
+    background-color:rgb(245, 245, 245);
+    position: absolute;
+    box-shadow:1px 1px 10px black;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+}
+.circle{
+    width: 137px;
+    height: 137px;
+    position: absolute;
+    margin: auto;
+    transform: rotate(45deg);
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+.circle1{
+    background-color:rgb(250, 250, 250);
+    top: 0; left: 0; bottom: 368px; right: 0;
+}
+.circle2{
+
+    background: linear-gradient(90deg, #5bb9c5, #59b4ca, #57afce);
+    top: 0; left: 0; bottom: 0; right: 18px;
+    z-index: 999;
+}
+.circle3{
+    background-color: rgb(250, 250, 250);
+    top: 368px; left: 0; bottom: 0; right: 0;
+}
+
+                                /*---- Information Side----*/
+
+.info{
+    background: linear-gradient(135deg, #23d5ab , #23a6d5);
+    position: relative;
+    width: 443.95px;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+
+.headinfo{
+    width: 25vw;
+    margin-left: 24px;
+;
+}
+.headinfo h1{
+    margin: 30px 0;
+    text-align: center;
+    color: #fff;
+    cursor:default;
+}
+.headinfo p{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    color: #fff;
+    cursor:default;
+}
+.address{
+    width: 25vw;
+    margin: 59px 23px;
+}
+.address a{
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-weight:normal;
+    color: #fff;
+    text-decoration: none;
+}
+.address a:hover{
+    text-decoration: underline;
+}
+.address i {
+    width: 30px;
+    height:30px;
+    Color:#fff;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.connect{
+    font-size: 17px;
+    width: 25vw;
+    margin-left:10px;
+}
+.connect p{
+    font-size: 19px;
+    padding-left: 15px;
+    color: #fff;
+    cursor:default;
+}
+.socialmedia{
+    font-size: 35px;
+    width: 18vw;
+    margin-left: 10px;
+    display:flex;
+    
+}
+.socialmedia i{
+    margin: 15px 5px;
+    width: 38px;
+    height: 38px;
+    color:white;
+	background-Color: transparent;
+}
+
+
+                                /*---- Send Message Side----*/
+
+.input{
+    background-color:rgb(250, 250, 250);
+    position: relative;
+    width: 443.95px;
+    height: 100%;
+    text-align: center;
+    z-index: 99;
+    line-height:16px;
+}
+.input-feild{
+opacity: 1;
+}
+
+.input h1 {
+    margin-top: 33px;
+    margin-bottom: 40px;
+    color: rgb(85, 85, 85);
+}
+.inputbox{
+    margin: 21px auto;
+    width: 26vw;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius:2vw;
+    border: 1px solid rgb(190, 190, 190);
+}
+.inputbox input,textarea {
+    width: 24vw;
+    border-radius:2vw;
+    border: 1px solid rgb(190, 190, 190);
+    line-height: 35px;
+    font-size: 15px;
+    outline: none;
+    border: white;
+}
+.input p{
+    position: absolute;
+    left: 56px;
+    width: 24vw;
+    margin: -18px auto;
+    font-size: 12px;
+    color:red;
+    text-align: right;
+    line-height: 10px;
+}
+
+.inputbox:hover, .inputbox:focus{
+    box-shadow: 0 1px 6px #20212447;
+    border-color: rgb(190, 190, 190);
+    outline: none;
+}
+.inputbox label {
+    position:absolute;
+    top:0;
+    left:15px;
+    padding:10px 0;
+    font-size:13px;
+    color: rgb(150, 150, 150);
+    letter-spacing:1px;
+    pointer-events:none;
+    transition:.5s;
+}
+
+.question-input{
+    border-radius: 1vw;
+}
+.submit{
+    border:none;
+    outline:none;
+    font-size: 17px;
+    color:#fff;
+    background: linear-gradient(135deg, #23d5ab , #23a6d5);
+    padding:8px 0;
+    width:26vw;
+    cursor:pointer;
+    border-radius:50px;
+    margin-top: 23px;
+}
+.submit:hover{
+    box-shadow: 0 1px 6px #20212447;
+    border: 1px solid #23d5ab;
+    padding:7px 0;
+    background: white;
+    color:#59b4ca;
+    box-sizing: border-box;
+
+}
+.error{
+    border:1px solid rgb(228, 131, 131);
+}
+.hidden {
+    display: none;
+}
+.success{
+
+    position: relative;
+    margin: auto;
+    color: rgb(136, 136, 136);
+    top: 29%;
+    width: 26vw;
+    line-height: 34px;
+    cursor:default;
+    transition: opacity 2s linear;
+    opacity: 0;
+}
+.success i{
+    font-size: 60px;
+    margin-top: 10px;
+    color:transparent;
+    background: linear-gradient(135deg, #23d5ab , #23a6d5);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.inputbox .onfocus{
+    top:-28px;
+    left:10px;
+    font-size:12px ;
+    color:#636363;
+}
