@@ -11,8 +11,6 @@
                                 /*---- Background Design----*/
 
 body{
-    width: 100%;
-    height: 100%;
     background-color: #e2ecec;
 }
 .bi{
@@ -41,45 +39,39 @@ body{
 .bi-whatsapp{
     font-size: 79px;
     top: 71%;
-    left: 81%;
+    right: 9%;
     transform: rotate(277deg);
 }
 .bi-instagram{
     font-size: 88px;
     top: 53%;
-    left: 84%;
+    right: 7%;
     transform: rotate(331deg);
 }
 .bi-chat-dots{
-    font-size: 129px;
+    font-size: 126px;
     top: 26%;
-    left: 86%;
+    right: 4%;
     transform: rotate(330deg);
 }
 .bi-calendar3{
     font-size: 121px;
     top: 5%;
-    left: 89%;
+    right: 2%;
     transform: rotate(-9deg);
 }
                                 /*---- container Design----*/
 container{
-    width: 70%;
-    height: 80%;
+    width: 80%;
     background-color: rgb(245, 245, 245);
-    top: 10%; bottom: 10%; right: 15%; left: 15%;
-    position: fixed;
+    top: 8%; right: 10%; left: 10%; bottom: 8%;
+    position: absolute;
     box-shadow: 1px 1px 10px black;
     border-radius: 25px;
     display: flex;
     overflow: hidden;
 }
 @media (max-width: 1200px) {
-    container{
-        width: 90%;
-        right: 5%;
-        left: 5%;
-    }
 
     container .info .address {
         margin: 35px 23px; 
@@ -87,10 +79,15 @@ container{
 
 }
 @media (max-width: 780px) {
+    body{
+        height: 1035px;
+    }
     container {
-        display: inline-block;
-        height: auto;
-        bottom: auto;
+        display: block;
+        width: 90%;
+        height: 935px;
+        right: 5%;
+        left: 5%;
     }
     container .input {
         width: 100%;
@@ -105,6 +102,15 @@ container{
     .info .square {
         top: 98%;
         left: 69%;
+    }
+    .bi{
+        display: none;
+    }
+    .bi-envelope-open {
+        font-size: 340px;
+        display: block;
+        top: 1%;
+        left: 2%;
     }
 }
 .square{
@@ -131,7 +137,7 @@ container{
 
 
 .headinfo{
-    width: 90%;
+    width: 84%;
     margin: auto;
 ;
 }
@@ -151,8 +157,9 @@ container{
     cursor:default;
 }
 .address{
-    width: 80%;
+    width: 84%;
     margin: 59px 23px;
+    margin-bottom: 43px;
 }
 .address a{
     display: block;
@@ -176,7 +183,7 @@ container{
 }
 .connect{
     font-size: 17px;
-    width: 80%;
+    width: 84%;
     margin-left:10px;
 }
 .connect p{
@@ -212,7 +219,8 @@ container{
     line-height:16px;
 }
 .input-feild{
-opacity: 1;
+    opacity: 1;
+    margin-bottom: 35px;
 }
 
 .input h1 {
@@ -300,7 +308,9 @@ opacity: 1;
     position: relative;
     margin: auto;
     color: rgb(136, 136, 136);
-    top: 29%;
+    top: 20%;
+    right: 10%;
+    left: 10%;
     width: 80%;
     line-height: 34px;
     cursor:default;
