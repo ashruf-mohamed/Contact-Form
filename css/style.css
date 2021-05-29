@@ -80,12 +80,12 @@ container{
 }
 @media (max-width: 780px) {
     body{
-        height: 1035px;
+        height: 1045px;
     }
     container {
         display: block;
         width: 90%;
-        height: 935px;
+        height: 945px;
         right: 5%;
         left: 5%;
     }
