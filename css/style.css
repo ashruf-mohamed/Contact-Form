@@ -304,16 +304,13 @@ container{
     display: none;
 }
 .success{
-
     position: relative;
     margin: auto;
     color: rgb(136, 136, 136);
-    top: 20%;
-    right: 10%;
-    left: 10%;
+    top: 30%;
     width: 80%;
     line-height: 34px;
-    cursor:default;
+    cursor: default;
     transition: opacity 2s linear;
     opacity: 0;
 }
